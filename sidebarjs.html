@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        .sidebarr {
+            height: 969px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="col-sm-1">
+        <div class="card-footer sidebarr" id="sidde">
+            <button class="btn btn-small btn-dark col-lg-2" id="btn" onclick="mySideb(); myClose();">.</button>
+            <div id="txtbar">
+                <hr>
+                <div>
+                    <div class="row">
+                        <h5 class="text-center col-lg-7">Sidebar</h5>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <button class="btn btn-dark">Main Content</button>
+                </div>
+                <br>
+                <div>
+                    <button class="btn btn-dark btn-sm">My Ig</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let x = document.getElementById('sidde');
+        let y = document.getElementById('txtbar');
+
+        function mySideb() {
+            if (x.style.width = '150px') {
+                x.style.width = '35%';
+                y.style.opacity = '0%';
+            } else {
+                x.style.width = '150px';
+                y.style.opacity = '100%';
+            }
+        }
+    </script>
+</body>
+
+</html>
